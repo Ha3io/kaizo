@@ -1,9 +1,12 @@
 {
+  "homepage": "http://ha3io.github.io/kaizo/",
   "name": "kaizo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -26,5 +29,8 @@
     "react-icons": "^5.2.1",
     "recharts": "^2.12.7",
     "sass": "^1.77.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
